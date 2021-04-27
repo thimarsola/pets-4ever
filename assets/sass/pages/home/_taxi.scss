@@ -1,0 +1,51 @@
+@use '../../abstracts' as *;
+
+.taxi {
+    @include padding(10rem);
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        &__content {
+            @include col-l(60%);
+
+            &__header {
+                margin-bottom: var(--fs-700);
+                font-family: "M PLUS Rounded 1c", sans-serif !important;
+                font-size: var(--fs-800);
+                color: var(--clr-yellow-500);
+            }
+
+            &__text {
+                p {
+                    margin-bottom: var(--fs-800);
+                    font-size: var(--fs-400);
+                    text-align: justify;
+                }
+            }
+        }
+
+        &__image {
+            @include col-r(40%);
+        }
+    }
+
+    @include mq(md) {
+        @include padding(8rem);
+
+        &__row {
+            &__image,
+            &__content {
+                flex-basis: 100%;
+                margin: 0;
+            }
+
+            &__image {
+                display: none;
+            }
+        }
+    }
+}

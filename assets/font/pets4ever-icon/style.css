@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'pets4ever-icon';
+  src:  url('fonts/pets4ever-icon.eot?4zx4oi');
+  src:  url('fonts/pets4ever-icon.eot?4zx4oi#iefix') format('embedded-opentype'),
+    url('fonts/pets4ever-icon.ttf?4zx4oi') format('truetype'),
+    url('fonts/pets4ever-icon.woff?4zx4oi') format('woff'),
+    url('fonts/pets4ever-icon.svg?4zx4oi#pets4ever-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pets4ever-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pets-w3c-validator:before {
+  content: "\e908";
+}
+.pets-bone:before {
+  content: "\e900";
+  color: #f4a52c;
+}
+.pets-facebook:before {
+  content: "\e901";
+  color: #f4a52c;
+}
+.pets-instagram:before {
+  content: "\e902";
+  color: #f4a52c;
+}
+.pets-mail:before {
+  content: "\e903";
+  color: #f4a52c;
+}
+.pets-paw:before {
+  content: "\e904";
+}
+.pets-phone:before {
+  content: "\e905";
+  color: #f4a52c;
+}
+.pets-target:before {
+  content: "\e906";
+  color: #f4a52c;
+}
+.pets-whatsapp:before {
+  content: "\e907";
+  color: #fff;
+}

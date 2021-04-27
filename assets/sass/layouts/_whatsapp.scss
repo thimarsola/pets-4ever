@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.whatsapp {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    z-index: 100;
+
+    a {
+        margin: 0;
+        padding: var(--fs-400);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--fs-800);
+        line-height: 1;
+        border-radius: 5rem;
+        background-color: #34af23;
+        opacity: 0.5;
+        @include transition(background-color);
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+            background-color: darken(#34af23, 10%);
+            @include transition(background-color);
+        }
+
+        i {
+            line-height: inherit;
+        }
+    }
+}

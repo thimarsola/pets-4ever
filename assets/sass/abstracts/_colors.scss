@@ -1,0 +1,45 @@
+$yellow: #f4a52c;
+$orange: #fa7a3d;
+$neutral: #5b5b5f;
+$gray-100: darken(#f7f7f7, 2%);
+$gray-200: darken(#ebebeb, 2%);
+
+$colors: (
+    "yellow": (
+        100: mix(white, $yellow, 80%),
+        200: mix(white, $yellow, 60%),
+        300: mix(white, $yellow, 40%),
+        400: mix(white, $yellow, 20%),
+        500: $yellow,
+        600: mix(black, $yellow, 20%),
+        700: mix(black, $yellow, 40%),
+        800: mix(black, $yellow, 60%),
+        900: mix(black, $yellow, 80%),
+    ),
+    "orange": (
+        100: mix(white, $orange, 80%),
+        200: mix(white, $orange, 60%),
+        300: mix(white, $orange, 40%),
+        400: mix(white, $orange, 20%),
+        500: $orange,
+        600: mix(black, $orange, 20%),
+        700: mix(black, $orange, 40%),
+        800: mix(black, $orange, 60%),
+        900: mix(black, $orange, 80%),
+    ),
+    "neutral": (
+        100: mix(white, $neutral, 80%),
+        200: mix(white, $neutral, 60%),
+        300: mix(white, $neutral, 40%),
+        400: mix(white, $neutral, 20%),
+        500: $neutral,
+        600: mix(black, $neutral, 20%),
+        700: mix(black, $neutral, 40%),
+        800: mix(black, $neutral, 60%),
+        900: mix(black, $neutral, 80%),
+    ),
+    "gray": (
+        100: $gray-100,
+        200: $gray-200,
+    ),
+);

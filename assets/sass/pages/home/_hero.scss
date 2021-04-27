@@ -1,0 +1,101 @@
+@use '../../abstracts/' as *;
+
+.hero {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: {
+        image: url("../images/background-hero.svg");
+        size: cover;
+        position: center;
+    }
+
+    &__content {
+        max-width: 73rem;
+        height: auto;
+
+        p {
+            margin-bottom: var(--fs-800);
+            font-size: var(--fs-500);
+        }
+
+        &__header {
+            margin-bottom: var(--fs-700);
+            font-size: var(--fs-900);
+            color: var(--clr-neutral-900);
+
+            h2 {
+                font-family: "Nunito ExtraBold", sans-serif !important;
+            }
+
+            span {
+                color: var(--clr-yellow-500);
+            }
+        }
+    }
+
+    &__vector {
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 50rem;
+        width: 26%;
+    }
+
+    &__image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 68rem;
+        width: 35%;
+    }
+
+    @include mq(md) {
+        &__vector {
+            width: 33%;
+        }
+
+        &__image {
+            width: 50%;
+        }
+    }
+
+    @include mq(sm) {
+        &__content {
+            p {
+                text-align: justify;
+                font-size: var(--fs-400);
+            }
+
+            &__header {
+                font-size: var(--fs-800);
+            }
+        }
+
+        &__vector {
+            width: 40%;
+            left: 0;
+            transform: scaleX(-1);
+        }
+
+        &__image {
+            width: 62%;
+        }
+    }
+
+    @include mq(xm) {
+        background-size: contain;
+
+        &__vector {
+            width: 30%;
+        }
+
+        &__image {
+            width: 50%;
+        }
+    }
+}

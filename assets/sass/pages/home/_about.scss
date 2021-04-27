@@ -1,0 +1,88 @@
+@use '../../abstracts' as *;
+
+.about {
+    position: relative;
+    @include padding(16rem);
+
+    &::after {
+        position: absolute;
+        top: 8rem;
+        right: 0;
+        content: "";
+        display: block;
+        width: 26rem;
+        height: 39rem;
+        background: {
+            image: url("../images/vetor-patinha.svg");
+            size: cover;
+        }
+        opacity: 0.8;
+        z-index: -1;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        &__image {
+            @include col-l(40%);
+
+            picture,
+            img {
+                width: 100% !important;
+            }
+        }
+
+        &__content {
+            @include col-r(60%);
+
+            &__header {
+                margin-bottom: var(--fs-600);
+                font-family: "M PLUS Rounded 1c", sans-serif !important;
+
+                h2 {
+                    margin-bottom: var(--fs-300);
+                    font-size: var(--fs-600);
+                    color: var(--clr-yellow-500);
+
+                    b {
+                        font-family: inherit !important;
+                    }
+                }
+
+                p {
+                    font-size: var(--fs-800);
+                    line-height: 1.1;
+                    color: var(--clr-neutral-900);
+                }
+            }
+
+            &__text {
+                text-align: justify;
+
+                p {
+                    margin-bottom: var(--fs-700);
+                }
+            }
+        }
+    }
+
+    @include mq(sm) {
+        @include padding(10rem);
+
+        &__row {
+            &__image,
+            &__content {
+                flex-basis: 100%;
+                margin: 0;
+            }
+
+            &__image {
+                display: none;
+            }
+        }
+    }
+}

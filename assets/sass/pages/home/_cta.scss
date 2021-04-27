@@ -1,0 +1,52 @@
+@use '../../abstracts' as *;
+
+.cta {
+    @include padding(8rem);
+    background: {
+        image: url("../images/background-cta.svg");
+        size: cover;
+        position: center;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__header {
+            margin-right: 6rem;
+            font-family: "M PLUS Rounded 1c", sans-serif !important;
+            font-size: var(--fs-800);
+            color: black;
+        }
+    }
+
+    @include mq(xl) {
+        &__row {
+            &__header {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    @include mq(xl) {
+        @include padding(6rem);
+        &__row {
+            display: block;
+            text-align: center;
+
+            &__header {
+                margin-right: 0;
+                margin-bottom: var(--fs-600);
+            }
+        }
+    }
+
+    @include mq(sm) {
+        &__row {
+            &__header {
+                font-size: var(--fs-600);
+            }
+        }
+    }
+}
