@@ -52,49 +52,46 @@
     ?>
 
     <!--header-->
-    <header class="header d-none">
+    <header class="header">
+        <div class="container">
+            <!--navbar-->
+            <div class="header__navbar">
 
-        <!--navbar-->
-        <div class="header__navbar">
+                <!-- brand -->
+                <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
+                    <picture>
+                        <source srcset="<?= get_template_directory_uri(); ?>/assets/images/logo-topo.webp"
+                            type="image/webp">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/images/logo-topo.png"
+                            alt="Logo topo <?= SITE["name"]; ?>" loading="lazy">
+                    </picture>
+                </a>
 
-            <!-- brand -->
-            <a href="<?= get_home_url(); ?>" title="<?= SITE["name"]; ?>">
-                <picture>
-                    <source srcset="<?= get_template_directory_uri(); ?>/assets/images/logo-topo.webp"
-                        type="image/webp">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/images/logo-topo.png"
-                        alt="Logo topo <?= SITE["name"]; ?>" loading="lazy">
-                </picture>
-            </a>
+                <div class="header__navbar__section">
+                    <!-- toggle -->
+                    <div class="header__navbar__section__toggle">
+                        <div class="header__navbar__section__toggle__bar"></div>
+                        <div class="header__navbar__section__toggle__bar"></div>
+                        <div class="header__navbar__section__toggle__bar"></div>
+                    </div>
+                    <!-- end of toggle -->
 
-            <div class="header__navbar__section">
-                <!-- toggle -->
-                <div class="header__navbar__section__toggle">
-                    <div class="header__navbar__section__toggle__bar"></div>
-                    <div class="header__navbar__section__toggle__bar"></div>
-                    <div class="header__navbar__section__toggle__bar"></div>
-                </div>
-                <!-- end of toggle -->
-
-                <!-- container -->
-                <div class="header__navbar__section__container">
-                    <!-- nav -->
-                    <nav class="header__navbar__section__container__nav">
-                        <h2 class="d-none">Menu de Navegação</h2>
-                        <?php
-                            if(is_home()){
-                                wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => '')); 
-                            }else{
-                                wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => '')); 
-                            }
+                    <!-- container -->
+                    <div class="header__navbar__section__container">
+                        <!-- nav -->
+                        <nav class="header__navbar__section__container__nav">
+                            <h2 class="d-none">Menu de Navegação</h2>
+                            <?php
+                            wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => '')); 
                         ?>
-                    </nav>
-                    <!-- end of nav -->
+                        </nav>
+                        <!-- end of nav -->
+                    </div>
+                    <!-- end of container -->
                 </div>
-                <!-- end of container -->
             </div>
+            <!--end of navbar-->
         </div>
-        <!--end of navbar-->
     </header>
     <!--end of header-->
     <?php endif ?>

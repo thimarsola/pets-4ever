@@ -1,11 +1,11 @@
 <!-- footer -->
 <footer class="footer">
     <div class="container">
-        <!-- row -->
-        <div class="row">
+        <!-- information -->
+        <div class="footer__information">
 
             <!-- about -->
-            <div class="footer__about">
+            <div class="footer__information__about">
                 <picture>
                     <source srcset="<?= get_template_directory_uri(); ?>/assets/images/logo-rodape.webp"
                         type="image/webp">
@@ -17,7 +17,7 @@
                 </p>
 
                 <!-- list -->
-                <ul class="footer__about__list">
+                <ul class="footer__information__about__list">
                     <li>
                         <a rel="nofollow" href="https://www.facebook.com/pets4everpetshop"
                             title="Visite nossa página no Facebook" target="_blank"><i class="pets-facebook"></i></a>
@@ -32,16 +32,16 @@
             <!-- end of about -->
 
             <!-- contact -->
-            <section class="footer__contact">
+            <section class="footer__information__contact">
 
                 <!-- header -->
-                <div class="footer__contact__header">
+                <div class="footer__information__contact__header">
                     <h2>Informações para contato</h2>
                 </div>
                 <!-- end of header -->
 
                 <!-- list -->
-                <ul class="footer__contact__list">
+                <ul class="footer__information__contact__list">
                     <li>
                         <address>
                             <a rel="nofollow" href="<?= CONTACT["addressLink"]; ?>" target="_blank"
@@ -85,30 +85,30 @@
             <!-- end of contact -->
 
             <!-- expedient -->
-            <section class="footer__expedient">
+            <section class="footer__information__expedient">
 
                 <!-- header -->
-                <div class="footer__expedient__header">
+                <div class="footer__information__expedient__header">
                     <h2>Horários de funcionamento</h2>
                 </div>
                 <!-- header -->
 
                 <!-- content -->
-                <article class="footer__expedient__content">
+                <article class="footer__information__expedient__content">
                     <h3>PetShop, Banho & Tosa:</h3>
                     <p>Seg a Sexta das 8h as 18h, sábado das 9h as 16h</p>
                 </article>
                 <!-- content -->
 
                 <!-- content -->
-                <article class="footer__expedient__content">
+                <article class="footer__information__expedient__content">
                     <h3>Clínica Veterinária</h3>
-                    <p>Seg a Sexta das 10h as 18h, sábado das 10h as 15h/p>
+                    <p>Seg a Sexta das 10h as 18h, sábado das 10h as 15h</p>
                 </article>
                 <!-- content -->
 
                 <!-- content -->
-                <article class="footer__expedient__content">
+                <article class="footer__information__expedient__content">
                     <h3>DayCare & Hotel:</h3>
                     <p>Seg a Sexta das 8h as 20h, sábado das 9h as 16h</p>
                     <p>Domingos e feriados hotel interno apenas, fechado ao público</p>
@@ -119,13 +119,13 @@
             <!-- end of expedient -->
 
         </div>
-        <!-- end of row -->
+        <!-- end of information -->
     </div>
 
     <!-- copyright -->
     <div class="footer__copyright bg-gray-200">
         <div class="container">
-            <p>&COPY; <?= date('Y') ?> | Todos os direitos reservados</p>
+            <p>&COPY; <?= date('Y'); ?> <?= SITE['name'] ?> | Todos os direitos reservados</p>
         </div>
     </div>
     <!-- end of copyright -->
@@ -148,7 +148,7 @@
                 <!-- end of goognet -->
 
                 <!-- validator -->
-                <div class="footer__validator">
+                <div class="footer__developer__row__validator">
                     <?php
                         $protocols = array('http://', 'http://www.', 'https://', 'https://www.', 'www.');
 

@@ -52,6 +52,14 @@ a:not([class]) {
     text-decoration-skip: auto;
 }
 
+i {
+    color: inherit !important;
+
+    &::before {
+        color: inherit !important;
+    }
+}
+
 // Make images easier to work with
 img,
 picture {
