@@ -11,6 +11,10 @@ $petshopCss = new MatthiasMullie\Minify\CSS();
 $petshopCss->add(dirname(__DIR__, 1) . "/assets/css/style-petshop.css");
 $petshopCss->minify(dirname(__DIR__, 1) . "/assets/css/style-petshop.min.css");
 
+$banhoTosaCss = new MatthiasMullie\Minify\CSS();
+$banhoTosaCss->add(dirname(__DIR__, 1) . "/assets/css/style-banho-e-tosa.css");
+$banhoTosaCss->minify(dirname(__DIR__, 1) . "/assets/css/style-banho-e-tosa.min.css");
+
 
 /**
  * js
@@ -36,3 +40,16 @@ $petshopJs->add(dirname(__DIR__, 1) . "/assets/js/theme/animation.js");
 $petshopJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/animation.js");
 $petshopJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/petshop/animation.js");
 $petshopJs->minify(dirname(__DIR__, 1) . "/assets/js/script-petshop.min.js");
+
+$banhoTosaJs = new MatthiasMullie\Minify\JS();
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/scroll.js");
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/theme/menu.js");
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/owl.carousel.min.js");
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/banho-e-tosa/carousel.js");
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/gsap.js");
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/ScrollTrigger.js");
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/theme/animation.js");
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/animation.js");
+$banhoTosaJs->add(dirname(__DIR__, 1) . "/assets/js/theme/pages/banho-e-tosa/animation.js");
+$banhoTosaJs->minify(dirname(__DIR__, 1) . "/assets/js/script-banho-e-tosa.min.js");

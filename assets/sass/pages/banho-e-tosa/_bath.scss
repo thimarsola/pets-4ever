@@ -1,0 +1,128 @@
+@use '../../abstracts' as *;
+
+.bath {
+    &__center {
+        @include padding(12rem);
+
+        &__row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &__body {
+                @include col-l(60%);
+                text-align: justify;
+
+                &__header {
+                    margin-bottom: var(--fs-600);
+                    color: var(--clr-yellow-500);
+                    text-align: left;
+
+                    h3 {
+                        font-family: "M PLUS Rounded 1c", sans-serif !important;
+                        font-size: var(--fs-800);
+                        color: black;
+                    }
+
+                    p {
+                        margin-bottom: var(--fs-300);
+                        font-size: var(--fs-600);
+                        line-height: 1 !important;
+                    }
+                }
+
+                a {
+                    margin-top: var(--fs-800);
+                }
+            }
+
+            &__image {
+                @include col-r(40%);
+            }
+        }
+    }
+
+    &__bath {
+        &__row {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            &__image {
+                @include col-l(40%);
+            }
+
+            &__body {
+                @include col-r(60%);
+                text-align: justify;
+
+                &__header {
+                    margin-bottom: var(--fs-600);
+
+                    h3 {
+                        margin-top: var(--fs-300);
+                        font-family: "M PLUS Rounded 1c", sans-serif !important;
+                        font-size: var(--fs-800);
+                        color: var(--clr-yellow-500);
+                    }
+                }
+
+                p {
+                    margin-bottom: var(--fs-500);
+                }
+
+                ul {
+                    padding: 0;
+                    list-style: initial;
+                    list-style-position: inside;
+                }
+            }
+        }
+    }
+
+    @include mq(md) {
+        &__center {
+            &__row {
+                align-items: flex-start;
+            }
+        }
+    }
+
+    @include mq(sm) {
+        &__center {
+            @include padding(8rem);
+            &__row {
+                &__body {
+                    margin: 0;
+                    flex-basis: 100%;
+                }
+
+                &__image {
+                    margin: 0;
+                    margin-bottom: var(--fs-600);
+                    max-width: 30rem;
+                    flex-basis: 100%;
+                    order: -1;
+                }
+            }
+        }
+
+        &__bath {
+            &__row {
+                &__body {
+                    margin: 0;
+                    flex-basis: 100%;
+                }
+
+                &__image {
+                    margin: 0;
+                    margin-bottom: var(--fs-600);
+                    max-width: 30rem;
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}
