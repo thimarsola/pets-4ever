@@ -98,10 +98,12 @@
 
     <!-- whatsapp -->
     <div class="whatsapp">
-        <a rel="nofollow"
-            href="https://api.whatsapp.com/send?phone=55<?= formatPhone(CONTACT["whatsapp"]); ?>&text=<?= urlencode(CONTACT["whatsappMessage"]); ?>"
-            target="_blank" title="Vamos conversar?">
-            <i class="pets-whatsapp"></i>
-        </a>
+        <div class="whatsapp__content">
+            <a rel="nofollow"
+                href="https://api.whatsapp.com/send?phone=55<?= formatPhone(CONTACT["whatsapp"]); ?>&text=<?= urlencode(CONTACT["whatsappMessage"]); ?>"
+                target="_blank" title="Vamos conversar?">
+                <i class="pets-whatsapp"></i>
+            </a>
+        </div>
     </div>
     <!-- end of whatsapp -->
