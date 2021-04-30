@@ -45,14 +45,14 @@
     }
     ?>
 
-    <h1 class="d-none"><?= SITE["name"]; ?></h1>
+    <h1 class="d-none"><?php echo(is_home()) ? SITE["name"] : the_title()?></h1>
 
     <?php
         if(!is_404()):
     ?>
 
     <!--header-->
-    <header class="header">
+    <header class="header<?= is_home() ? " p-fixed" : '' ?>">
         <div class="container">
             <!--navbar-->
             <div class="header__navbar">
@@ -94,7 +94,6 @@
         </div>
     </header>
     <!--end of header-->
-    <?php endif ?>
 
     <!-- whatsapp -->
     <div class="whatsapp">
@@ -107,3 +106,7 @@
         </div>
     </div>
     <!-- end of whatsapp -->
+
+    <!-- main -->
+    <main>
+        <?php endif ?>

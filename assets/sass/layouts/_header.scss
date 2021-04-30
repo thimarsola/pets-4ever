@@ -1,12 +1,12 @@
 @use '../abstracts' as *;
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    display: block;
+    position: relative;
     width: 100%;
     z-index: 200;
     background-color: rgba(white, 0.9);
+    @include transition(position);
 
     picture {
         max-width: 14rem;

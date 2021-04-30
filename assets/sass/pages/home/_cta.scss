@@ -16,7 +16,7 @@
         &__header {
             margin-right: 6rem;
             font-family: "M PLUS Rounded 1c", sans-serif !important;
-            font-size: var(--fs-800);
+            font-size: 3.8rem;
             color: black;
         }
     }
@@ -24,7 +24,7 @@
     @include mq(xl) {
         &__row {
             &__header {
-                font-size: 4rem;
+                font-size: 3.2rem;
             }
         }
     }

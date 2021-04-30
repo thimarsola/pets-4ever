@@ -1,3 +1,31 @@
+<?php 
+    if(is_page()):
+?>
+
+<!-- cta -->
+<section class="cta cta__pages">
+    <div class="container">
+        <!-- row -->
+        <div class="cta__row">
+            <!-- header -->
+            <header class="cta__row__header">
+                <h2>Gostaria de maiores informações?</h2>
+            </header>
+            <!-- end of header -->
+
+            <a href="<?= whatsapp(formatPhone(CONTACT["whatsapp"]), "Eu gostaria de mais informações sobre o " . get_the_title()); ?>"
+                class="btn btn-neutral-900" target="_blank" title="Vamos conversar?">Fale conosco</a>
+        </div>
+        <!-- end of row -->
+
+    </div>
+</section>
+<!-- end of cta -->
+<?php endif ?>
+
+</main>
+<!-- end of main -->
+
 <!-- footer -->
 <footer class="footer">
     <div class="container">

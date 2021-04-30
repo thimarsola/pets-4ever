@@ -1,0 +1,24 @@
+{
+    "petshop": [
+        {
+            "image": "medicamentos",
+            "title": "Medicamentos",
+            "description": "Linha completa de vacinas, vermífugos, preventivos para pulgas e carrapatos, anti-inflamatórios, probióticos, antibióticos, otológicos e shampoos terapêuticos."
+        },
+        {
+            "image": "racoes",
+            "title": "Rações",
+            "description": "Trabalhamos com as rações de linha premium do mercado: golden, premier, ND e royal. Temos rações para cada fase da vida do peludo e por porte. Fazemos pedido sob encomenda se necessário."
+        },
+        {
+            "image": "petiscos",
+            "title": "Petiscos",
+            "description": "Trabalhamos apenas com linhas naturais de petiscos integrais, sem conservantes, sem corantes, sem transgênicos e algumas opções sem proteína animal e farinha de trigo."
+        },
+        {
+            "image": "diversos",
+            "title": "Diversos",
+            "description": "Linha completa de acessórios, brinquedos, roupas, brinquedos, camas, guias e peitorais e produtos de higiene. "
+        }
+    ]
+}
