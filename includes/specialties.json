@@ -1,0 +1,34 @@
+{
+    "specialties": [
+        {
+            "name": "Acupuntura"
+        },
+        {
+            "name": "Cardiologista"
+        },
+        {
+            "name": "Cirurgias"
+        },
+        {
+            "name": "Dermatologista"
+        },
+        {
+            "name": "Endocrinologista"
+        },
+        {
+            "name": "Exames laboratoriais"
+        },
+        {
+            "name": "Fisioterapia"
+        },
+        {
+            "name": "Neurologista"
+        },
+        {
+            "name": "Oftalmologista"
+        },
+        {
+            "name": "Ultrassom"
+        }
+    ]
+}

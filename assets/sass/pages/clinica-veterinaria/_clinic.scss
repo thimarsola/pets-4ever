@@ -1,0 +1,192 @@
+@use '../../abstracts' as *;
+
+.clinic {
+    .pages__header {
+        h2 {
+            font-size: 6.4rem !important;
+        }
+    }
+
+    &__about {
+        &__row {
+            @include padding(12rem);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            &__body {
+                @include col-l(60%);
+
+                &__header {
+                    margin-bottom: var(--fs-600);
+                    font-family: "M PLUS Rounded 1c", sans-serif !important;
+
+                    p {
+                        margin-bottom: var(--fs-300);
+                        font-family: inherit !important;
+                        font-size: var(--fs-600);
+                        color: var(--clr-yellow-500);
+                        line-height: 1.1;
+                    }
+
+                    h3 {
+                        font-family: inherit !important;
+                        font-size: var(--fs-800);
+                        color: black;
+                    }
+                }
+
+                &__content {
+                    margin-bottom: var(--fs-800);
+                    text-align: justify;
+                }
+            }
+
+            &__image {
+                @include col-r(40%);
+            }
+        }
+    }
+
+    &__specialties {
+        position: relative;
+        padding-bottom: 12rem;
+
+        &::after {
+            position: absolute;
+            top: -7rem;
+            right: 0;
+            content: "";
+            display: block;
+            width: 19rem;
+            height: 29rem;
+            background: {
+                image: url("../images/vetor-patinha.svg");
+                size: cover;
+            }
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        &::before {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 0;
+            content: "";
+            display: block;
+            width: 19rem;
+            height: 29rem;
+            background: {
+                image: url("../images/vetor-patinha.svg");
+                size: cover;
+            }
+            opacity: 0.8;
+            transform: scaleX(-1);
+            z-index: -1;
+        }
+
+        &__header {
+            margin-bottom: var(--fs-900);
+            font-family: "M PLUS Rounded 1c", sans-serif !important;
+            font-size: var(--fs-800);
+            text-align: center;
+            color: black;
+        }
+
+        &__grid {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+            gap: calc(var(--gap) * 2);
+
+            &__card {
+                position: relative;
+                top: 0;
+                left: 0;
+                text-align: center;
+                transform: scale(1) rotate(0);
+                @include transition(transform);
+
+                &:nth-child(odd) {
+                    &:hover {
+                        transform: scale(0.95) rotate(-0.5deg);
+                        @include transition(transform);
+                    }
+                }
+
+                &:nth-child(even) {
+                    &:hover {
+                        transform: scale(0.95) rotate(0.5deg);
+                        @include transition(transform);
+                    }
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: calc(100% - 5rem);
+                    background-color: var(--clr-yellow-500);
+                    border-radius: 1rem;
+                    z-index: -1;
+                    box-shadow: 0 0 15px rgba(black, 0.1);
+                }
+
+                &__header {
+                    max-width: 90%;
+                    margin: 0 auto;
+                    padding: calc(var(--gap) * 2);
+                    background-color: var(--clr-gray-100);
+                    border-radius: 1rem;
+                    font-size: var(--fs-600);
+                    box-shadow: 0 0 15px rgba(black, 0.1);
+
+                    picture {
+                        max-width: 11rem;
+                        margin: 0 auto var(--fs-700) auto;
+                    }
+
+                    h4 {
+                        font-family: "M PLUS Rounded 1c", sans-serif !important;
+                        font-size: var(--fs-600);
+                        color: black;
+                    }
+                }
+
+                a {
+                    margin: var(--fs-700) 0;
+                }
+            }
+        }
+    }
+
+    @include mq(md) {
+        &__about {
+            &__row {
+                &__body {
+                    flex-basis: 100%;
+                    margin: 0;
+                }
+
+                &__image {
+                    flex-basis: 100%;
+                    margin: 0;
+                    display: none;
+                }
+            }
+        }
+
+        &__specialties {
+            &__grid {
+                grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+            }
+        }
+    }
+}

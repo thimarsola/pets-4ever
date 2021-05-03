@@ -648,99 +648,108 @@ body {
   background-color: #dededf;
   color: white;
   border-radius: 5rem;
-  transition: background-color 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn-neutral-100:hover {
-  background-color: #c4c4c6;
-  transition: background-color 300ms ease-in-out;
+  color: var(--clr-yellow-500);
+  background-color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-neutral-200 {
   background-color: #bdbdbf;
   color: white;
   border-radius: 5rem;
-  transition: background-color 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn-neutral-200:hover {
-  background-color: #a3a3a6;
-  transition: background-color 300ms ease-in-out;
+  color: var(--clr-yellow-500);
+  background-color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-neutral-300 {
   background-color: #9d9d9f;
   color: white;
   border-radius: 5rem;
-  transition: background-color 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn-neutral-300:hover {
-  background-color: #838386;
-  transition: background-color 300ms ease-in-out;
+  color: var(--clr-yellow-500);
+  background-color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-neutral-400 {
   background-color: #7c7c7f;
   color: white;
   border-radius: 5rem;
-  transition: background-color 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn-neutral-400:hover {
-  background-color: #636365;
-  transition: background-color 300ms ease-in-out;
+  color: var(--clr-yellow-500);
+  background-color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-neutral-500 {
   background-color: #5b5b5f;
   color: white;
   border-radius: 5rem;
-  transition: background-color 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn-neutral-500:hover {
-  background-color: #424245;
-  transition: background-color 300ms ease-in-out;
+  color: var(--clr-yellow-500);
+  background-color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-neutral-600 {
   background-color: #49494c;
   color: white;
   border-radius: 5rem;
-  transition: background-color 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn-neutral-600:hover {
-  background-color: #303032;
-  transition: background-color 300ms ease-in-out;
+  color: var(--clr-yellow-500);
+  background-color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-neutral-700 {
   background-color: #373739;
   color: white;
   border-radius: 5rem;
-  transition: background-color 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn-neutral-700:hover {
-  background-color: #1e1e1f;
-  transition: background-color 300ms ease-in-out;
+  color: var(--clr-yellow-500);
+  background-color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-neutral-800 {
   background-color: #242426;
   color: white;
   border-radius: 5rem;
-  transition: background-color 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn-neutral-800:hover {
-  background-color: #0b0b0c;
-  transition: background-color 300ms ease-in-out;
+  color: var(--clr-yellow-500);
+  background-color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-neutral-900 {
   background-color: #121213;
   color: white;
   border-radius: 5rem;
-  transition: background-color 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .btn-neutral-900:hover {
-  background-color: black;
-  transition: background-color 300ms ease-in-out;
+  color: var(--clr-yellow-500);
+  background-color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .btn-gray-100 {

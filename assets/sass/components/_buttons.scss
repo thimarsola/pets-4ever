@@ -25,15 +25,30 @@
 
 @each $color, $shade in $colors {
     @each $prop, $value in $shade {
-        .btn-#{$color}-#{$prop} {
-            background-color: $value;
-            color: white;
-            border-radius: 5rem;
-            @include transition(background-color);
+        @if $color == neutral {
+            .btn-#{$color}-#{$prop} {
+                background-color: $value;
+                color: white;
+                border-radius: 5rem;
+                @include transition(all);
 
-            &:hover {
-                background-color: darken($value, 10%);
+                &:hover {
+                    color: var(--clr-yellow-500);
+                    background-color: white;
+                    @include transition(all);
+                }
+            }
+        } @else {
+            .btn-#{$color}-#{$prop} {
+                background-color: $value;
+                color: white;
+                border-radius: 5rem;
                 @include transition(background-color);
+
+                &:hover {
+                    background-color: darken($value, 10%);
+                    @include transition(background-color);
+                }
             }
         }
     }

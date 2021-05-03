@@ -14,7 +14,7 @@
 
     <div class="container">
         <!-- center -->
-        <section class="bath__center">
+        <article class="bath__center">
 
             <!-- row -->
             <div class="bath__center__row">
@@ -61,11 +61,11 @@
             </div>
             <!-- end of row -->
 
-        </section>
+        </article>
         <!-- end of center -->
 
         <!-- bath -->
-        <section class="bath__bath">
+        <article class="bath__bath">
             <!-- row -->
             <div class="bath__bath__row">
                 <!-- image -->
@@ -108,7 +108,7 @@
                 <!-- end of body -->
             </div>
             <!-- end of row -->
-        </section>
+        </article>
         <!-- end of bath -->
     </div>
 </section>

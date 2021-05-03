@@ -1,0 +1,34 @@
+{
+    "tips": [
+        {
+            "image": "principais-problemas-de-pele",
+            "name": "Principais problemas de pele",
+            "description": "Os problemas que acometem a pele dos animaizinhos são muito comuns. Eles podem ser causados por pulgas, carrapatos, ácaros, fungos, alimentação, exposição solar ou até mesmo pela predisposição genética e racial do seu animal. Fique atento a falhas no pelo, coceiras, manchas e informe seu médico veterinário."
+        },
+        {
+            "image": "vacinacao",
+            "name": "Vacinação",
+            "description": "A vacinação garante que seu animalzinho estará protegido das principais doenças transmitidas por vírus e bactérias. Cada espécie tem seu protocolo de vacinação específico e deve ser acompanhado e seguido com orientação do seu médico veterinário de confiança."
+        },
+        {
+            "image": "atendimento-especializado",
+            "name": "Atendimento Especializado",
+            "description": "Certas vezes o atendimento do seu animalzinho requer ser realizado por um profissional especializado. A medicina veterinária evoluiu bastante e existem vários profissionais capacitados para realizar o atendimento. Alguns exemplos são: cardiologia, oftalmologia, dermatologia, acupuntura e fisioterapia, oncologia, dentre outros. O trabalho sempre eve ser realizado em parceria entre o veterinário especializado e o clínico geral."
+        },
+        {
+            "image": "castracao",
+            "name": "Castração",
+            "description": "É um procedimento cirúrgico que deve ser realizado por profissional habilitado. A castração previne doenças importantes como tumores de mama (tanto em macho quanto em fêmeas), infecções uterinas, hérnias perineais, dentre outros. É de extrema importância a realização de exames pré-operatórios, a fim de minimizar os riscos anestésicos e garantir que todos os cuidados sejam realizados com seu pet."
+        },
+        {
+            "image": "carrapatos-e-vermifugacao",
+            "name": "Carrapatos e vermifugação",
+            "description": "Transmitem doenças e verminoses. O controle deve ser realizado periodicamente através de produtos próprios (tópicos, orais ou coleiras específicas) e o veterinário sempre deve ser consultado para uma melhor avaliação do seu animalzinho. Além disso, é muito importante o controle de parasitas no ambiente. A Adicionar ao dicionário também deve ser realizada adequadamente e periodicamente. Animais infestados com endoparasitas podem ser mais quietos, apresentarem perda de peso, pelo opaco, anemia, dentre outros. Além disso, algumas verminoses podem ser transmitidas a nós, humanos."
+        },
+        {
+            "image": "alimentacao",
+            "name": "Alimentação",
+            "description": "Produtos Super Premium garantem uma alimentação saudável e balanceada, além de atender as necessidades específicas de cada faixa etária. A troca de ração deve ser realizada gradualmente, a fim de evitar problemas como diarreia e vômito. Existem rações comerciais utilizadas como auxiliares no tratamento de determinadas doenças que podem ser indicadas pelo médico veterinário.  Caso prefira preparar o alimento do seu animalzinho, o ideal é consultar um profissional especializado na área, a fim de elaborar um cardápio equilibrado e que atenda as necessidades nutricionais."
+        }
+    ]
+}

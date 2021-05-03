@@ -72,13 +72,25 @@ services.from('.services__header', {
         x: -100,
         ease: 'Expo.easeInOut'
     })
-    .from(['.services__grid__card:nth-child(1)', '.services__grid__card:nth-child(2)'], {
+    .from('.services__grid__card:nth-child(1)', {
         opacity: 0,
         duration: 1.25,
         y: 100,
         ease: 'Circ.easeInOut'
-    }, '-=1')
-    .from(['.services__grid__card:nth-child(3)', '.services__grid__card:nth-child(4)'], {
+    })
+    .from('.services__grid__card:nth-child(2)', {
+        opacity: 0,
+        duration: 1.25,
+        y: 100,
+        ease: 'Circ.easeInOut'
+    })
+    .from('.services__grid__card:nth-child(3)', {
+        opacity: 0,
+        duration: 1.25,
+        y: 100,
+        ease: 'Circ.easeInOut'
+    })
+    .from('.services__grid__card:nth-child(4)', {
         opacity: 0,
         duration: 1.25,
         y: 100,
